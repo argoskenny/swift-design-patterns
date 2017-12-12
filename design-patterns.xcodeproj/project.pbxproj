@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5677AB21FDFE39C0096AFA9 /* DiscountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5677AB11FDFE39C0096AFA9 /* DiscountService.swift */; };
 		C5BAF2B01FD15C940010625C /* DesignPatternsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BAF2AF1FD15C940010625C /* DesignPatternsTableViewController.swift */; };
 		C5BAF2B81FD160C70010625C /* AdapterClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BAF2B71FD160C70010625C /* AdapterClientViewController.swift */; };
 		C5BAF2BA1FD160DD0010625C /* CompositeClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BAF2B91FD160DD0010625C /* CompositeClientViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5677AB11FDFE39C0096AFA9 /* DiscountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountService.swift; sourceTree = "<group>"; };
 		C5BAF2AF1FD15C940010625C /* DesignPatternsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsTableViewController.swift; sourceTree = "<group>"; };
 		C5BAF2B71FD160C70010625C /* AdapterClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterClientViewController.swift; sourceTree = "<group>"; };
 		C5BAF2B91FD160DD0010625C /* CompositeClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeClientViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C5BAF2C11FD161400010625C /* StrategyClientViewController.swift */,
+				C5677AB11FDFE39C0096AFA9 /* DiscountService.swift */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				C5ED46811FD1284900B42A10 /* AppDelegate.swift in Sources */,
 				C5BAF2C01FD1612C0010625C /* FactoryClientViewController.swift in Sources */,
 				C5C2AA291FDF844A00790CF5 /* NewsService.swift in Sources */,
+				C5677AB21FDFE39C0096AFA9 /* DiscountService.swift in Sources */,
 				C5BAF2C41FD1614E0010625C /* TemplateClientViewController.swift in Sources */,
 				C5BAF2B81FD160C70010625C /* AdapterClientViewController.swift in Sources */,
 				C5BAF2C21FD161400010625C /* StrategyClientViewController.swift in Sources */,
