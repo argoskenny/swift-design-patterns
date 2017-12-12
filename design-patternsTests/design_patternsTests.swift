@@ -16,6 +16,13 @@ class design_patternsTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
+    func testVideoAdapter() {
+        let newsService: NewsService = VideoNews()
+        newsService.loadNewsData()
+        let data = newsService.parseNewsData()
+        XCTAssert(data.title == "This is video news")
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
