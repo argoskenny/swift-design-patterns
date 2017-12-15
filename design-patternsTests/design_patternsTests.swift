@@ -24,25 +24,21 @@ class design_patternsTests: XCTestCase {
     }
     
     func testGeneralDiscount() {
-        let productData: ProductData = ProductData(name: "", number: 1, price: 20)
+        let productData: ProductData = ProductData(name: "", quantity: 2, price: 20)
         let discountService: DiscountService = DiscountService(discountStrategy: GeneralDiscount(), productData: productData)
-        XCTAssert(discountService.calculateTotalPrice() == 18)
+        XCTAssert(discountService.calculateTotalPrice() == 40)
     }
     
     func testBuyTenGetOneFreeDiscount() {
-        let productData: ProductData = ProductData(name: "", number: 1, price: 20)
-        let discountService: DiscountService = DiscountService(discountStrategy: BuyTenGetOneFreeDiscount(), productData: productData)
-        XCTAssert(discountService.calculateTotalPrice() == 20)
-        
-        let productData2: ProductData = ProductData(name: "", number: 10, price: 20)
+        let productData2: ProductData = ProductData(name: "", quantity: 10, price: 20)
         let discountService2: DiscountService = DiscountService(discountStrategy: BuyTenGetOneFreeDiscount(), productData: productData2)
         XCTAssert(discountService2.calculateTotalPrice() == 180)
     }
     
     func testTenPercentDiscount() {
-        let productData: ProductData = ProductData(name: "", number: 5, price: 20)
+        let productData: ProductData = ProductData(name: "", quantity: 5, price: 52)
         let discountService: DiscountService = DiscountService(discountStrategy: TenPercentDiscount(), productData: productData)
-        XCTAssert(discountService.calculateTotalPrice() == 90)
+        XCTAssert(discountService.calculateTotalPrice() == 235)
     }
     
     override func tearDown() {

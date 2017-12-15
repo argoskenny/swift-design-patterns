@@ -15,6 +15,7 @@ class AdapterClientViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Adapter Pattern"
         loadData()
         initTabliView()
         registDefaultCell()
